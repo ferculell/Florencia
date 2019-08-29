@@ -1,0 +1,1401 @@
+{
+  "name": "Florencia Chatbot",
+  "intents": [
+    {
+      "intent": "saludos",
+      "examples": [
+        {
+          "text": "hola"
+        },
+        {
+          "text": "holis"
+        },
+        {
+          "text": "Buen día"
+        },
+        {
+          "text": "Buenas"
+        },
+        {
+          "text": "qué tal?"
+        },
+        {
+          "text": "Cómo va"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Hi"
+        },
+        {
+          "text": "qué onda?"
+        },
+        {
+          "text": "¿que pasa?"
+        },
+        {
+          "text": "dia de dia"
+        },
+        {
+          "text": "saludos"
+        },
+        {
+          "text": "ey"
+        },
+        {
+          "text": "buena noches"
+        },
+        {
+          "text": "Buenos días"
+        },
+        {
+          "text": "Oye"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "info_envio",
+      "examples": [
+        {
+          "text": "Necesito envío"
+        },
+        {
+          "text": "¿Hacen envíos urgentes?"
+        },
+        {
+          "text": "¿Cuánto aviso de entrega?"
+        },
+        {
+          "text": "¿Cuánto cuesta el envío?"
+        },
+        {
+          "text": "¿el envío es gratuito?"
+        },
+        {
+          "text": "cómo entregan"
+        },
+        {
+          "text": "¿Se entregan durante las vacaciones?"
+        },
+        {
+          "text": "¿Podré tenerr mis flores el domingo?"
+        },
+        {
+          "text": "¿Cuándo recibiré mis flores?"
+        },
+        {
+          "text": "¿entregan los fines de semana?"
+        },
+        {
+          "text": "¿Ustedes hacen envíos?"
+        }
+      ]
+    },
+    {
+      "intent": "sugerencias_flores",
+      "examples": [
+        {
+          "text": "¿Qué tipos de flores son una buena opción como regalo de aniversario para los padres?"
+        },
+        {
+          "text": "que tipo de flores"
+        },
+        {
+          "text": "¿Cuál sería un buen arreglo para darle a alguien cuando se jubile?"
+        },
+        {
+          "text": "¿Cuáles son las mejores flores para el día de San Valentín?"
+        },
+        {
+          "text": "Quiero flores que expresen simpatía."
+        },
+        {
+          "text": "Me gustaría comprar flores para un amigo enfermo"
+        },
+        {
+          "text": "¿Qué flores para un funeral?"
+        },
+        {
+          "text": "ramo de novia"
+        },
+        {
+          "text": "¿Qué flores para un cumpleaños?"
+        },
+        {
+          "text": "¿Qué flores debo comprar para mi mamá?"
+        },
+        {
+          "text": "ramos para aniversarios"
+        },
+        {
+          "text": "¿Qué flores debo comprar?"
+        },
+        {
+          "text": "Flores recomendadas para ocasiones especiales."
+        },
+        {
+          "text": "Recomendaciones de flores"
+        },
+        {
+          "text": "sugerencias de flores"
+        },
+        {
+          "text": "Me podrías sugerir alguna flor."
+        }
+      ]
+    },
+    {
+      "intent": "despedidas",
+      "examples": [
+        {
+          "text": "listo"
+        },
+        {
+          "text": "me estoy yendo"
+        },
+        {
+          "text": "hasta luego"
+        },
+        {
+          "text": "Salgo"
+        },
+        {
+          "text": "me voy"
+        },
+        {
+          "text": "adiós"
+        },
+        {
+          "text": "chau"
+        },
+        {
+          "text": "que tengas un buen día"
+        },
+        {
+          "text": "hemos terminado"
+        },
+        {
+          "text": "hasta siempre"
+        },
+        {
+          "text": "es todo por ahora"
+        },
+        {
+          "text": "salu2"
+        },
+        {
+          "text": "Nos vemos"
+        },
+        {
+          "text": "adieu"
+        }
+      ]
+    },
+    {
+      "intent": "agradecimientos",
+      "examples": [
+        {
+          "text": "Gracias un montón"
+        },
+        {
+          "text": "muchas gracias"
+        },
+        {
+          "text": "Grax"
+        },
+        {
+          "text": "Gracias"
+        },
+        {
+          "text": "grasias"
+        },
+        {
+          "text": "te agradezco"
+        },
+        {
+          "text": "Te debo una"
+        },
+        {
+          "text": "Muy agradecido"
+        },
+        {
+          "text": "OK gracias"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity": "ocasion",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Navidad",
+          "synonyms": [
+            "las fiestas",
+            "nochebuena",
+            "D25",
+            "25 de diciembre"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "día de San Valentín",
+          "synonyms": [
+            "día de los enamorados",
+            "14F",
+            "14 de febrero",
+            "Feb 14",
+            "valentín"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Graduación",
+          "synonyms": [
+            "recibido",
+            "graduada",
+            "egreso",
+            "graduado"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Que te mejores",
+          "synonyms": [
+            "internado",
+            "clínica",
+            "padecimiento",
+            "hospital",
+            "cancer",
+            "enfermedad",
+            "enfermo",
+            "descompostura"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Aniversario",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Jubilación",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Funeral",
+          "synonyms": [
+            "entierro",
+            "velorio",
+            "pena",
+            "pésame",
+            "condolencias"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Cumpleaños",
+          "synonyms": [
+            "cumple"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Día de la Madre",
+          "synonyms": [
+            "día de mamá"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Felicidades",
+          "synonyms": [
+            "éxito",
+            "premio"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Boda",
+          "synonyms": [
+            "casorio",
+            "casamiento",
+            "recién casados",
+            "madrina",
+            "padrino"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "tipo_respuesta",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "negativo",
+          "synonyms": [
+            "no",
+            "nop",
+            "claro que no",
+            "para nada",
+            "no que yo sepa"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "incierto",
+          "synonyms": [
+            "quién sabe",
+            "desconozco",
+            "no lo puedo asegurar",
+            "no estoy seguro",
+            "no sé",
+            "puede ser",
+            "quizá"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "positivo",
+          "synonyms": [
+            "yes",
+            "yeah",
+            "ajá",
+            "claro que sí",
+            "sipi",
+            "absolutamente",
+            "definitivamente",
+            "así es",
+            "seguro",
+            "sí"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "relacion",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Novia",
+          "synonyms": [
+            "prometida"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "novio",
+          "synonyms": [
+            "prometido"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "madre",
+          "synonyms": [
+            "mamu",
+            "ma",
+            "mami",
+            "mamá",
+            "mama"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "padre",
+          "synonyms": [
+            "papá",
+            "pá",
+            "papi",
+            "papu"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "pariente",
+          "synonyms": [
+            "hermana",
+            "hermano",
+            "abuela",
+            "abuelo",
+            "abuelita",
+            "abue",
+            "tío",
+            "tía",
+            "proimo",
+            "hermanastro"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "amigo",
+          "synonyms": [
+            "socio",
+            "colega",
+            "coach",
+            "maestro",
+            "vecino",
+            "compinche",
+            "mejor amigo",
+            "compañero",
+            "profesor",
+            "entrenador"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "esposa",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "marido",
+          "synonyms": []
+        }
+      ]
+    },
+    {
+      "entity": "genero",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "femenino",
+          "synonyms": [
+            "mina",
+            "mujer",
+            "chica",
+            "dama"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "no binario",
+          "synonyms": [
+            "trans",
+            "LGBT",
+            "bi",
+            "queer",
+            "ninguno",
+            "ambos",
+            "intersex",
+            "sin género"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "masculino",
+          "synonyms": [
+            "caballero",
+            "macho",
+            "chico",
+            "tipo",
+            "hombre"
+          ]
+        }
+      ]
+    }
+  ],
+  "language": "es",
+  "metadata": {
+    "api_version": {
+      "major_version": "v1",
+      "minor_version": "2018-09-20"
+    }
+  },
+  "description": "",
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Sí ocasión especial",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "¿Para qué tipo de ocasión serían, entonces?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1550879781716",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1550716420721"
+      },
+      "conditions": "@tipo_respuesta:positivo",
+      "dialog_node": "node_11_1550880128074",
+      "previous_sibling": "node_10_1550879979059"
+    },
+    {
+      "type": "standard",
+      "title": "No ocasión especial",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "¿Para quién serían las flores? (p. ej.: novio, novia, amigo, pariente, etc.)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1550879781716",
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_6_1550629177654"
+      },
+      "conditions": "@tipo_respuesta:negativo",
+      "dialog_node": "node_10_1550879979059"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Entonces lo ideal son las caléndulas. Sin embargo, también te recomendaría que consideres regalarle una planta de interior, ya que brindan una imagen de vitalidad muy beneficiosa para quien debe recuperarse de alguna afección."
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_7_1550717562280",
+      "metadata": {},
+      "conditions": "@tipo_respuesta:negativo",
+      "dialog_node": "node_9_1550717890393",
+      "previous_sibling": "node_8_1550717595254"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "En los Hospitales o Clínicas no permiten flores con aromas fuertes o que puedan resultar alergénicas. Lo más adecuado sería, por lo tanto, gladiolos, iris o tulipanes."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1550717562280",
+      "metadata": {},
+      "conditions": "@tipo_respuesta:positivo || @tipo_respuesta:incierto",
+      "dialog_node": "node_8_1550717595254"
+    },
+    {
+      "type": "standard",
+      "title": "Aniversario propio o no",
+      "output": {},
+      "parent": "node_1_1550877110253",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@tipo_respuesta",
+      "dialog_node": "node_2_1550877330065",
+      "digress_out": "allow_all"
+    },
+    {
+      "type": "standard",
+      "title": "Recolectar nombre de usuario",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hola, $username! Mi tarea es ofrecerte una guía con los envíos y si necesitás sugerencias, conozco algo de flores. ¿Cómo puedo ayudarte? "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Bienvenido",
+      "context": {
+        "username": "<? input.text ?>"
+      },
+      "metadata": {},
+      "conditions": "true",
+      "dialog_node": "node_13_1550887115819"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sin dudas un ramo de rosas rojas es la opción clásica en este caso."
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_6_1550629177654",
+      "metadata": {},
+      "conditions": "@relacion:Novia",
+      "dialog_node": "node_8_1550629763995",
+      "previous_sibling": "node_7_1550629538353"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Las rosas blancas son ideales para alegrar a una madre."
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_6_1550629177654",
+      "metadata": {},
+      "conditions": "@relacion:madre",
+      "dialog_node": "node_9_1550629886111",
+      "previous_sibling": "node_8_1550629763995"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Yo sugeriría un clásico para estos casos: violetas y gardenias blancas. No falla."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1550629177654",
+      "metadata": {},
+      "conditions": "@relacion:amigo || @relacion:pariente",
+      "dialog_node": "node_11_1550630270674",
+      "previous_sibling": "node_10_1550630024813"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A los hombres les encantan los narcisos, casi sin excepción. Creo que sería una opción muy adecuada."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1550629177654",
+      "metadata": {},
+      "conditions": "@relacion:marido || @relacion:novio || @relacion:padre",
+      "dialog_node": "node_10_1550630024813",
+      "previous_sibling": "node_9_1550629886111"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Creo que una opción acertada serían las orquídeas amarillas."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1550629177654",
+      "metadata": {},
+      "conditions": "@relacion:esposa",
+      "dialog_node": "node_7_1550629538353"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": "¿Las flores son para un hombre, una mujer o para alguien de género no-binario?"
+      },
+      "parent": "slot_14_1550889852311",
+      "event_name": "focus",
+      "dialog_node": "handler_16_1550889852311",
+      "previous_sibling": "handler_15_1550889852311"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_14_1550889852311",
+      "context": {
+        "genero": "@genero"
+      },
+      "conditions": "@genero",
+      "event_name": "input",
+      "dialog_node": "handler_15_1550889852311"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1550716420721",
+      "variable": "$genero",
+      "dialog_node": "slot_14_1550889852311",
+      "previous_sibling": "handler_20_1550890349161"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Los tulipanes rojos son ideales para regalarle a un hombre en San Valentín."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1550716420721",
+      "metadata": {},
+      "conditions": "@genero:masculino",
+      "dialog_node": "node_17_1550889903856",
+      "previous_sibling": "slot_14_1550889852311"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para quienes no se sienten identificados con la normativización binaria de género, un mix de tulipanes y rosas rojas es una buena opción en San Valentín."
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_1_1550716420721",
+      "metadata": {},
+      "conditions": "@genero:(no binario)",
+      "dialog_node": "node_19_1550890147517",
+      "previous_sibling": "node_18_1550890112919"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para una mujer, sin duda las rosas rojas son un obsequio clásico de San Valentín."
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_1_1550716420721",
+      "metadata": {},
+      "conditions": "@genero:femenino",
+      "dialog_node": "node_18_1550890112919",
+      "previous_sibling": "node_17_1550889903856"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Me alegra que me lo consultes. Realizamos envíos sólo dentro de la ciudad, de Lunes a Jueves de 8:00 a 19:00 hs. Los Viernes, Sábados y Domingos enviamos desde las 12:00 hasta las 23:00 hs. ¡Todos los envíos son sin costo adicional!"
+          ]
+        }
+      },
+      "parent": "node_1_1550716420721",
+      "conditions": "#info_envio",
+      "event_name": "generic",
+      "dialog_node": "handler_20_1550890349161"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "¿Tu pareja es un hombre, una mujer o una persona de género no-binario?"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_2_1550877330065",
+      "metadata": {},
+      "conditions": "@tipo_respuesta:positivo",
+      "dialog_node": "node_4_1550877596397",
+      "previous_sibling": "node_3_1550877405905"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Entonces lo aconsejable es un ramo de hortensias y peonías."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1550877330065",
+      "metadata": {},
+      "conditions": "@tipo_respuesta:negativo",
+      "dialog_node": "node_3_1550877405905",
+      "previous_sibling": "node_5_1550877685166"
+    },
+    {
+      "type": "standard",
+      "title": "Aniversario por género",
+      "output": {},
+      "parent": "node_2_1550877330065",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@genero",
+      "dialog_node": "node_5_1550877685166",
+      "digress_out": "allow_all"
+    },
+    {
+      "type": "standard",
+      "title": "Que te mejores pregunta por Hospital",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "¿La persona que recibirá las flores se encuentra internada en un Hospital o Clínica?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1550629147763",
+      "metadata": {},
+      "conditions": "@ocasion:(Que te mejores)",
+      "dialog_node": "node_6_1550717421192",
+      "previous_sibling": "node_1_1550877110253"
+    },
+    {
+      "type": "standard",
+      "title": "Pregunta por ocasión especial",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "¿Para una ocasión especial?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1550629147763",
+      "metadata": {},
+      "conditions": "true",
+      "dialog_node": "node_9_1550879781716",
+      "previous_sibling": "node_6_1550629177654"
+    },
+    {
+      "type": "standard",
+      "title": "Aniversario preguntas",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "¿Las flores son para tu aniversario?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1550629147763",
+      "metadata": {},
+      "conditions": "@ocasion:Aniversario",
+      "dialog_node": "node_1_1550877110253",
+      "previous_sibling": "node_1_1550716420721"
+    },
+    {
+      "type": "standard",
+      "title": "Sugerencias para relaciones",
+      "output": {},
+      "parent": "node_5_1550629147763",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@relacion",
+      "dialog_node": "node_6_1550629177654",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_12_1550630598029"
+    },
+    {
+      "type": "standard",
+      "title": "Ocasiones",
+      "output": {},
+      "parent": "node_5_1550629147763",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@ocasion",
+      "dialog_node": "node_12_1550630598029",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_6_1550717421192"
+    },
+    {
+      "type": "frame",
+      "title": "San Valentín pregunta género",
+      "output": {},
+      "parent": "node_5_1550629147763",
+      "metadata": {
+        "fallback": "leave",
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@ocasion:(día de San Valentín)",
+      "dialog_node": "node_1_1550716420721",
+      "digress_out": "allow_all",
+      "digress_out_slots": "not_allowed"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para ese tipo de ocasiones lo más recomendable es el clásico de las felicitaciones: un arreglo de caléndulas y crisantemos. ¡Son geniales!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_12_1550630598029",
+      "metadata": {},
+      "conditions": "@ocasion:Felicidades || @ocasion:Graduación || @ocasion:Cumpleaños || @ocasion:Jubilación",
+      "dialog_node": "node_1_1550712360408",
+      "previous_sibling": "node_15_1550630987706"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Las bodas son muy importantes, tanto para los protagonistas como para todos los participantes del evento. Un bouquet de rosas blancas y rosadas serían una opción que te haría destacar para esta ocasión."
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_12_1550630598029",
+      "metadata": {},
+      "conditions": "@ocasion:Boda",
+      "dialog_node": "node_14_1550630834232",
+      "previous_sibling": "node_13_1550630646868"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para la Navidad la flor clásica es"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_12_1550630598029",
+      "metadata": {},
+      "conditions": "@ocasion:Navidad",
+      "dialog_node": "node_2_1550712935681",
+      "previous_sibling": "node_1_1550712360408"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Un arreglo con tulipanes y gladiolos es perfecto para obsequiar a quien se encuentra sobrellevando algún padecimiento. Es una combinación que transmite tanto fortaleza como cordialidad."
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_12_1550630598029",
+      "metadata": {},
+      "conditions": "@ocasion:(Que te mejores)",
+      "dialog_node": "node_15_1550630987706",
+      "previous_sibling": "node_14_1550630834232"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para una ocasión de tanta congoja lo más adecuado son los claveles. Es, sin dudas, la opción clásica."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_12_1550630598029",
+      "metadata": {},
+      "conditions": "@ocasion:Funeral",
+      "dialog_node": "node_13_1550630646868"
+    },
+    {
+      "type": "standard",
+      "title": "Sugerencias por locación",
+      "output": {},
+      "parent": "node_6_1550717421192",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@tipo_respuesta",
+      "dialog_node": "node_7_1550717562280",
+      "digress_out": "allow_all"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Creo que no hay mujer que no se derrita con un ramo de rosas rojas para su Aniversario."
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_5_1550877685166",
+      "metadata": {},
+      "conditions": "@genero:femenino",
+      "dialog_node": "node_7_1550877785040",
+      "previous_sibling": "node_6_1550877725604"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para quienes no se sienten atados a las normativas impuestas, las orquídeas son flores especiales. Sin dudas serían la mejor elección para un Aniversario."
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_5_1550877685166",
+      "metadata": {},
+      "conditions": "@genero:(no binario)",
+      "dialog_node": "node_8_1550877852355",
+      "previous_sibling": "node_7_1550877785040"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Un hombre seguramente amará recibir tulipanes en su Aniversario."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1550877685166",
+      "metadata": {},
+      "conditions": "@genero:masculino",
+      "dialog_node": "node_6_1550877725604"
+    },
+    {
+      "type": "standard",
+      "title": "Intent confidence check",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "En otras cosas"
+      },
+      "conditions": "intents[0].confidence < 0.7",
+      "dialog_node": "node_12_1550884905879",
+      "previous_sibling": "Bienvenido"
+    },
+    {
+      "type": "standard",
+      "title": "Saludos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hola! ¿En qué puedo serte útil?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "#saludos",
+      "dialog_node": "node_1_1550626422136",
+      "previous_sibling": "node_4_1550628065114"
+    },
+    {
+      "type": "standard",
+      "title": "Sugerencias de flores",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_1_1550716420721"
+      },
+      "conditions": "#sugerencias_flores",
+      "dialog_node": "node_5_1550629147763",
+      "previous_sibling": "node_12_1550884905879"
+    },
+    {
+      "type": "standard",
+      "title": "Agradecimientos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Por nada."
+              },
+              {
+                "text": "De nada, $username."
+              },
+              {
+                "text": "A tu servicio."
+              },
+              {
+                "text": "Es un placer, $username."
+              },
+              {
+                "text": "No hay por qué."
+              },
+              {
+                "text": "Gracias a vos, $username."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "#agradecimientos",
+      "dialog_node": "node_2_1550626550432",
+      "previous_sibling": "node_1_1550626422136"
+    },
+    {
+      "type": "standard",
+      "title": "Envíos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Me alegra que me lo consultes. Realizamos envíos sólo dentro de la ciudad, de Lunes a Jueves de 8:00 a 19:00 hs. Los Viernes, Sábados y Domingos enviamos desde las 12:00 hasta las 23:00 hs. ¡Todos los envíos son sin costo adicional!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "#info_envio",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_4_1550628065114",
+      "previous_sibling": "node_5_1550629147763"
+    },
+    {
+      "type": "standard",
+      "title": "Despedidas",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Gracias por tu tiempo, $username. Que estés bien. Adiós."
+              },
+              {
+                "text": "Chau, $username! Gracias por tu tiempo!"
+              },
+              {
+                "text": "Espero haberte sido útil. Gracias por tu tiempo, $username."
+              },
+              {
+                "text": "Gracias por tu interés y tu tiempo, $username. Hasta la próxima!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "#despedidas",
+      "dialog_node": "node_3_1550627047582",
+      "previous_sibling": "node_2_1550626550432"
+    },
+    {
+      "type": "standard",
+      "title": "En otras cosas",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "No te he entendido. Intentá usando otras palabras."
+              },
+              {
+                "text": "¿Podrías decirlo con otras palabras? No pude entenderte."
+              },
+              {
+                "text": "No entendí el significado de lo que dijiste."
+              },
+              {
+                "text": "Disculpame, no entiendo bien tus palabras"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "anything_else",
+      "dialog_node": "En otras cosas",
+      "previous_sibling": "node_3_1550627047582"
+    },
+    {
+      "type": "standard",
+      "title": "Bienvenido",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hola. Mi nombre es Florencia y soy un chatbot. Me encantaría hablar con vos. ¿Cuál es tu nombre?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "welcome",
+      "dialog_node": "Bienvenido"
+    }
+  ],
+  "workspace_id": "beea7e49-f2c1-463b-b440-86068d9de2ff",
+  "counterexamples": [],
+  "system_settings": {
+    "tooling": {
+      "store_generic_responses": true
+    }
+  },
+  "learning_opt_out": false,
+  "status": "Available"
+}
